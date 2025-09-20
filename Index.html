@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tale til Sussi - 60 år</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #f0f0f0 0%, #fafafa 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #4a4a4a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 250, 250, 0.95) 100%);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "🌸";
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            font-size: 2em;
+            opacity: 0.3;
+        }
+
+        .header::after {
+            content: "🌿";
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            font-size: 2em;
+            opacity: 0.3;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #8b8b8b;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            color: #d4a5a5;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+
+        .floral-divider {
+            width: 150px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #d4a5a5, #a8c4a2, #d4a5a5, transparent);
+            margin: 20px auto;
+        }
+
+        .section {
+            background: white;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 3px solid #d4a5a5;
+            position: relative;
+        }
+
+        .section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 165, 165, 0.15);
+        }
+
+        .section:nth-child(even) {
+            border-top-color: #a8c4a2;
+        }
+
+        .section:nth-child(3n) {
+            border-top-color: #e8b4b8;
+        }
+
+        .section h2 {
+            color: #7a7a7a;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .section p, .section ul {
+            line-height: 1.9;
+            font-size: 1.1em;
+            color: #5a5a5a;
+        }
+
+        .section ul {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        .section li {
+            margin-bottom: 12px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .section li:before {
+            content: "❀";
+            position: absolute;
+            left: 0;
+            color: #d4a5a5;
+            font-size: 1.2em;
+        }
+
+        .greeting {
+            font-size: 1.3em;
+            color: #8b8b8b;
+            font-style: italic;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .intro-section {
+            background: linear-gradient(135deg, #fff 0%, #fdf8f8 100%);
+            border-top-color: #e8b4b8;
+        }
+
+        .closing-section {
+            background: linear-gradient(135deg, #f8fdf8 0%, #fff 100%);
+            border-top-color: #a8c4a2;
+            margin-bottom: 40px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            .section h2 {
+                font-size: 1.3em;
+            }
+
+            .header::before,
+            .header::after {
+                display: none;
+            }
+        }
+
+        .decorative-footer {
+            text-align: center;
+            padding: 30px;
+            color: #a8a8a8;
+            font-style: italic;
+        }
+
+        .flower-decoration {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 1.5em;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tale til Sussis 60 års fødselsdag</h1>
+            <div class="floral-divider"></div>
+            <p class="subtitle">60 års fødselsdag</p>
+        </div>
+
+        <div class="section intro-section">
+            <p class="greeting">Kære Sussi</p>
+            <h2>ÅBNING</h2>
+            <p>For 10 år siden holdt jeg din 50 års tale. Den skildte vandene mere end Moses ved Det Røde Hav.</p>
+            <p>Halvdelen syntes jeg var gået over grænsen - den anden halvdel syntes bare jeg var ærlig.</p>
+            <p>Den har hjemsøgt mig i 10 år. Det har gået mig på. Jeg har tænkt meget over, om det er de rigtige venner vi har. </p>
+            <p>For talen fejlede jo ikke noget!</p>
+        </div>
+
+        <div class="section">
+            <h2>GÆSTELISTEN</h2>
+            <p>Sussi, din gæsteliste bærer præg af dine uopfyldte dyrlægedrømme. Du har anvendt Darwins teori som veterinær udvægelse af vennekredsen.</p>
+            <p>Første pulje fik invitation - mange sprang fra. Natural selection! De svage kunne ikke overleve min 50-års tale. I, der sidder her, er evolutionens vindere.</p>
+            <p>Dan røg ud i første sortering og var knust - han havde allerede købt gave. Men dyrlæge-Sussi genåbnede journalen: "Vent, patienten kan reddes selvom han har mange skavanker!" han fik genvalg i anden runde. Fra aflivning til genoplivning!</p>
+            <p>Lene og Brian fik invitationer med andres navne - som genbrugte vaccinations-kort hvor man bare skriver nyt navn ovenpå. I er adoptivhunde, der har overtaget andres plads i flokken.</p>
+            <p>Kære overlevere: I er her fordi I bestod testen sidste gang. og de andre som ikke klarede den?
+                 Som dyrlæge-Sussi ville sige: "De skulle nok have været aflivet alligevel."</p>            
+        </div>
+
+        <div class="section">
+            <h2>DE NYE I KLASSEEN</h2>
+            <p>Så har vi genbokonen og hendes mand - Annette og Michael. De leverer...</p>
+
+            <ul>
+                <li>Friskbagt morgenbrød - hver weekend!</li>
+                <li>Lufthavnstaxa - gratis!</li>
+                <li>Gin & Tonic i orangeriet - ofte!</li>
+                <li>Rejsegilde for et cykelskur - der er ingen anledning, der er for lille til at de inviterer os. De er simpelthen så glade for at være sammen med os!</li>
+            </ul>
+            
+            <p>Så da Sussi spørger mig "Hvad gør vi med Annette og Michael til min fødselsdag?", så syntes jeg jo ikke at vi kunne være andet bekendt end at invitere dem med.</p>
+            <p>Og med alt det de har gjort for os, så synes jeg de skulle have lov til at følges med os!</p>
+        </div>
+
+        <div class="section">
+            <h2>ALDERDOMMENS GLÆDER</h2>
+            <p>60 år - det er jo først i morgen. Jeg ved ikke om der er nogen symbolik i, at selv vejrudsigten markerer begivenheden med tordenvejr!</p>            
+            <p>Da jeg der stod 60 år i invitationen, måtte jeg lige stoppe op og tænke over alle de år der er gået.</p> 
+            <p>De er jo ikke gået helt sporløst hen ver os!
+            <p>Din ryg begyndte at brokke sig allerede som 50-årig. I Liechtenstein måtte du blive på hotellet, mens Nicoline havde fornøejse at se fodboldkamp mellem Vaduz mod Basel sammen med Kristoffer og mig.</p>
+            <p>Kampen endte 0-0 og du kom som sædvanligt med din dumsmarte kommentart: "Til hvem?"</p>
+            <p>Det endte med at vi ikke fik dig med hjem fra Liechtenstein, men der er nok ikke nogen her, der ikke har hørt den historie. Så jeg vil forskåne dem for historien, hvor lægen siger til mig, at jeg ikke kan få min mor med i flyveren dagen efter.</p>
+            <h3>Fitness</h3>
+            <p>Men ryggen, den er fikset nu - en klassisk Sussi-manøvre:</p>
+            <p>Hvis jeg havde foreslået, at du skulle starte til fitness eller få en personlig træner pga. af din ryg, så havde du afvist det.</p>
+            <p>Så jeg vender den rundt, og gør som om det er mig den er gal med. Jeg gerne vil starte på et lille træningshold så jeg kan komme i lidt bedre form.</p> 
+            <p>Så vi kombinerer en tur i Menu med et besøg hos fitness-Michael i Bagsværd for at høre hvad han kan gøre for mig. Og nu hvor du alligevel er der, så taler du også lidt med ham. Og pludselig er du gang.</p>            
+            <p>Manipulation? Nej. Ægteskabelig strategi efter 30 år. Du skal ikke nudges - du skal narres til dit eget bedste. Alt er godt! Jeg er meget glad. Du behøver ikke sige tak :-)</p>
+        </div>
+
+        <div class="section">
+            <h2>DEMENS-TESTEN</h2>
+            <p>Når vi nu er ved alder, så læste jeg en artikel i avisen i den forgangne uge om demens. Der er en del tegn man skal være opmærksom på:</p>
+            <ul>
+                <li>Glemsomhed - det kan du nok ikke huske, men check</li>
+                <li>Svigtende dømmekraft - du giftede dig med mig, så check</li>
+                <li>Humørsvingninger - ingen kommentarer - men du skal vide, det kan jo også være til den positive side!</li>
+            </ul>
+            <p>Når jeg læser de punkter kan man jo godt blive bekymret, så glæden er meget stor da jeg kommer til det næste punkt:</p>
+            <ul>
+                <li>Problemer med at finde ord</li>
+            </ul>
+            <p>Det kan man ikke sige du har. Jeg frygter ikke at vi kommer til at sidde en dag bare og kigge på hinanden...</p>
+            <p>Dit 3-timers arbejdsmøde i går blev genfortalt på 4 timer da du kom hjem. Det var..... </p>
+            <ul>
+                <li>Med detaljer</li>
+                <li>Med undertekster</li>
+                <li>Og med hvad folk EGENTLIG mente!</li>
+            </ul>
+            <p>Jeg har altid undret mig over hvordan dine opsummeringer kan tage længere tid end den faktiske hændelse.</p>
+        </div>
+
+        <div class="section">
+            <h2>DINE SUPERKRÆFTER - GODE SIDER</h2>
+            <p>Noget af det jeg altid har holdt af er, at du er.....</p>
+            <ul>
+                <li>Pålidelig: Selv som københavner! (Jeg var skeptisk)</li>
+                <li>Ingen ynk: Enlig mor på Østerbro - cykel, børnehave, arbejde, madlavning, godnathistorier. Ingen klynk. Respekt!</li>                    
+                <li>Stædig: som et muldyr. Men muldyr kan nu også være søde</li>
+                <li>Klog - bedre studentereksamen end mig, men det var vist også en anden skala dengang!</li>                
+            </ul>
+
+            <H3>HELIKOPTER-MOR DELUXE</H3>
+            <p>Sussi, du har altid været der for børnene. Faktisk har du været der SÅ meget, at de nogle gange kiggede sig over skulderen for at se om du stod der.</p>
+            <p>Du var....</p>
+            <ul>
+                <li>Forældrefrivillig i begge skoleklasser i ALLE årene? Selvfølgelig!</li>
+                <li>Holdleder til dans? Check. </li>
+                <li>I undomsforeningen til fodbold? Ja da! </li>
+            </ul>
+            <p>Du mente selv at du havde alle forudsætninger. Du har gået til dans hos Britt Bendixen og spillet fodbold i én sæson i Lundtofte.</p>
+            <p>I dag er børnene voksne, velfungerende mennesker. Så selvom de måske syntes det var lidt for meget dengang, så virkede det.
+                 Helikopter-forældrestilen får måske et dårligt ry, men dine børn kan i det mindste både danse OG forstå offside-reglen. Det er da altid noget!</p>
+            <p>Slutteligt, så har du virkelig dårlig humor. F.eks. når du sidder i limousinen og jeg balancerer med plast og pap på vej hen til kontaineren. 
+               Så trykker du hårdt på hornet så jeg bliver forskrækket.</p>
+        </div>
+
+        <div class="section closing-section">
+            <h2>Afslutning</h2>
+            <p>For nylig så Karoline "gamle" billeder fra Paris og udbrød: "Ej mor, du så da godt ud!".</p>
+            <p>Så måtte jeg jo også lige korrekse Karoline. "NUTID. Karoline, det er i NUTID!"</p>
+            <p>Din mor ser stadig godt ud. Skønheden sidder i øjnene og når man smiler....kom bare med det.</p>
+            <p>Nu går vi sandsynligvis ind i det sidste årti, hvor du arbejder på fuld tid. Det glæder jeg mig til. 
+                Så kan du planlægge og bestille endnu flere rejser - og det er nok bedre end jeg gør det!</p>
+            <h3>SKÅL</h3>
+            <p>I morgen fylder du 60. Hvis vi overlever tordenvejret, har vi 10 fantastiske år foran os. Måske 20. Måske 30. Hvem tæller?</p>
+            <p>Du blev ikke dyrlæge - mend</p>
+            <p>Skål for dig, Sussi - min stædige, ordrige, pålidelige københavner med dårlig humor, god ryg og
+                og et hjerte der er stort nok til alle børn og dyr... og lige akkurat også til mig!>/p>
+
+            <p>Og til jer andre: Hvis I synes denne tale var for hård, så glæd jer til 70-års talen. Den bliver HELT ærlig.</p>
+        </div>
+
+        <div class="decorative-footer">
+            <span class="flower-decoration">🌸</span>
+            <span class="flower-decoration">🌿</span>
+            <span class="flower-decoration">🌸</span>
+        </div>
+    </div>
+</body>
+</html>
